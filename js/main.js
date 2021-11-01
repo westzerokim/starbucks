@@ -1,22 +1,3 @@
-// 검색창기능 
-
-const searchEl = document.querySelector(".search");
-const searchInputEl = searchEl.querySelector("input");
-
-searchEl.addEventListener('click',function(){
-  searchInputEl.focus();
-});
-
-searchInputEl.addEventListener('focus',function(){
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder',"통합검색");
-});
-
-searchInputEl.addEventListener('blur',function(){
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder',"");
-});
-
 // 오른쪽 배지들과 위로 올라가는 버튼기능 구현
 
 
@@ -159,5 +140,3 @@ spyEls.forEach(function(spyEl){
 });
 
 
-const thisYear =document.querySelector(".this-year");
-thisYear.textContent = new Date().getFullYear();
