@@ -2,8 +2,7 @@
 /* visual */
 .visual{
   margin-top: 120px;
-  background-image: url("../images/visual_bg.jpg");
-  background-position: center;
+background-color: #d1131d;
 }
 .visual .inner{
   height: 642px;
@@ -15,33 +14,34 @@
 }
 .visual .title .btn{
   position: absolute;
-  top:250px;
-  left: 173px;
+  top:180px;
+  left: 100px;
 }
 .visual .cup1.image{
  position: absolute;
- bottom:0;
+ bottom:50px;
  right: -47px; 
-}
-.visual .cup1.text{
-  position: absolute;
-  top:38px;
-  right: 171px;
 }
 .visual .cup2.image{
   position: absolute;
- bottom:0;
+ bottom:60px;
  right: 162px; 
 }
-.visual .cup2.text{
+
+.visual .cup3{
   position: absolute;
-  top:321px;
-  right: 416px; 
-}
-.visual .spoon{
-  position: absolute;
-  bottom:0;
+  bottom:50px;
   left:275px; 
+}
+.visual .bg_left{
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+.visual .bg_right{
+  position: absolute;
+  right: 0px;
+  top: 0;
 }
 .visual .fade-in{
  opacity: 0;
@@ -219,50 +219,86 @@ position: absolute;
 /* rewards */
 .rewards{
   position: relative;
+  background: #1e3932;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
-.rewards .bg-left{
-  width: 50%;
-  height: 100%;
-  background-color:#272727 ;
-  position: absolute;
-  left: 0;
-  top:0;
-}
-.rewards .bg-right{
-  width: 50%;
-  height: 100%;
-  background-color:#d5c798 ;
-  position: absolute;
-  right: 0;
-  top:0;}
+
 .rewards .inner{
-  background-image: url(../images/rewards.jpg);
-  height: 241px;
-  
+   height: 237px;
+}
+.rewards .inner .reward_logo{
+  width: 176px;
+  float: left;
+  margin: 10px  40px  10px 0px;
+}
+.rewards .inner .reward_logo img{
+  max-width: 100%;
+  vertical-align: top;
+}
+.rewards .inner .reward_content{
+ padding-bottom: 30px;
+ border-bottom: 1px solid  rgba(253, 253, 253, 0.3);
+ top:0;
+ left: 180px;
+}
+.rewards .inner .e-gift{
+  left: 180px;
+  top: 150px;
+  padding-top: 20px;
+  font-size: 15px;
+}
+.rewards .inner .reward_content,
+.rewards .inner .e-gift
+{
+  text-align: left;
+  color: #fff;
+  width: 850px;
+  position: absolute;
+  margin: 0 20px;
+}
+.rewards .inner .reward_content h2{
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.rewards .inner .reward_content p{
+  font-size: 20px;
 }
 .rewards .btn-group{
-  width: 250px;
+  width: 210px;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  bottom: 24px;
+  top:70px;
   right: 0;
+}
+.rewards .inner .e-gift .e-gift_btn{
+  position: absolute;
+  top:13px;
+  right: 0;
+  width: 210px;
 }
 .rewards .btn-group .btn.sing-up{
  margin-right:10px ;
+ width: 100px;
+ background-color: #00704a;
+ color: #fff;
+ border: 1px solid #00704a;
+ border-radius: 6px;
 }
 .rewards .btn-group .btn.sing-in{
-  width: 110px;
+  width: 100px;
 }
-.rewards .btn-group .btn.gift{
+.rewards .e-gift_btn .btn.gift{
  margin-top: 10px;
- flex-grow: 1;
+ width: 210px;
 }
 
 
 /* youtuvbe video */
 
-.youtube{
+/* .youtube{
  position: relative;
  height: 700px;
  background-color: #333;
@@ -315,73 +351,75 @@ position: absolute;
   position: absolute;
   top:350px;
   left: 150px;
-}
+} */
 
 
 
 /* season product */
 .season-product{
- background-image: url(../images/season_product_bg.jpg);
+ background-image: url(../images/2021_christmas_bean_bg.jpg);
 
 
 }
 .season-product .inner{
- height: 400px;
+ height: 550px;
 }
-.season-product .floating3{
+.season-product .inner .product{
   position: absolute;
-  top:-200px;
-  right: 0;
+  top:80px;
+  left: 130px;
 }
 .season-product .text-group{
  position: absolute;
- top:110px;
- right: 100px;
+ top:140px;
+ right: 130px;
 }
 .season-product .text-group .title{
- margin-bottom: 10px;
+ margin-bottom: 30px;
 }
-.season-product .text-group .description{
- margin-bottom: 15px;
-}
+
 
 
 /* reserve coffee */
 .reserve-coffee{
- background-image: url(../images/reserve_bg.jpg);
+ background-image: url(../images/reserve_christmas_bean_211018.jpg);
+ background-position: center;
 }
 .reserve-coffee .inner{
  height: 400px;
 }
-.reserve-coffee .reserve-logo{
- position: absolute;
- top: 110px;
- left: 0;
-}
 .reserve-coffee .text-group{
  position: absolute;
  top:124px;
- left: 208px;
+ left: 110px;
 }
-.reserve-coffee .product{
+.reserve-coffee .more{
   position: absolute;
-  top:0;
-  right: 0;
+  top:110px;
+  left: 370px
+}
+.reserve-coffee .more .btn{
+  border:#d5a012 2px solid;
+  border-radius: 6px;
+  color: #d5a012;
+}
+.reserve-coffee .more .btn:hover{
+  background-color: #d5a012;
+  color: #fff;
 }
 
-/* pick your favorite*/
-.pick-your-favorite{
- background-image: url(../images/favorite_bg.jpg);
- background-repeat: no-repeat;
- background-position: center ;
- background-attachment: fixed;
- background-size: cover;
-}
 .pick-your-favorite .inner{
  padding: 110px 0;
 }
+.pick-your-favorite {
+  background-image: url(../images/favorite_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-attachment: fixed;
+  background-size: cover;
+}
 .pick-your-favorite .text-group{
- margin-left: 100px;
+ margin-left: 50px;
  display: flex;
  width: 362px;
  flex-wrap: wrap;
@@ -394,57 +432,43 @@ position: absolute;
   margin-bottom: 40px;
 
 }
+.pick-your-favorite .picture{
+  position: absolute;
+  top:50px;
+  right: -100px;
+}
+
+
+
+
+
+
 .reserve-store{
-  background-image: url(../images/reserve_store_bg.jpg);
+  background-image: url(../images/reserve_bg_pc.png);
+  height: 400px;
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  background-size: auto 338px;
+  background-position: 53% 100%;    
+  overflow: hidden;
 }
-.reserve-store .inner{
- height: 600px;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-
-.reserve-store .medal{
- perspective: 600px;
- width: 334px;
-  height: 334px;
-}
-.reserve-store .medal .front,
-.reserve-store .medal .back
-{
-  width: 334px;
-  height: 334px;
-  backface-visibility: hidden;
-  transition: 1s;
+.reserve-store .reserve_magazine .right{
   position: absolute;
+  top:0;
+  right: 50px;
+}
+.reserve-store .reserve_magazine .left{
+ position: absolute;
+ top:150px;
+ left: 50px;
+}
+.reserve-store .reserve_magazine .left .btn{
+ position: absolute;
+ top:130px;
+ left: 270px;  
+}
 
-}
-.reserve-store .medal .front{
-  position: absolute;
-  transform: rotateY(0deg);
-}
-.reserve-store .medal:hover .front{
- transform: rotateY(180deg);
-}
-.reserve-store .medal .back{
- transform: rotateY(-180deg);
 
-}
-.reserve-store .medal:hover .back{
- transform: rotateY(0deg);
-}
-.reserve-store .medal .back .btn{
-  position: absolute;
-  top:240px;
-  left: 0;
-  right: 0;
-  margin: auto;
 
-}
 
 
 /* find the strore */
